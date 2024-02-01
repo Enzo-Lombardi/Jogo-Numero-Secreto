@@ -1,5 +1,5 @@
 let listaNumero = [];
-let quantidadesNumeros = 50;
+let quantidadesNumeros = 10;
 let numeroSecreto = geraNumeroAleatorio();
 let tentativas = 1;
 
@@ -18,7 +18,7 @@ function mensagemTela() {
 mensagemTela();
 
 function verificaChute() {
-    let chute = document.querySelector("input").value;
+    let chute = document.getElementById("input-do-chute").value;
     
     if (chute == numeroSecreto) {
         exibirTextoNaTela("h1", "Acertou!");

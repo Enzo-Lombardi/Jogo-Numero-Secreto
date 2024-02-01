@@ -1,5 +1,5 @@
 let listaNumero = [];
-let quantidadesNumeros = 50;
+let quantidadesNumeros = 10;
 let numeroSecreto = geraNumeroAleatorio();
 let tentativas = 1;
 

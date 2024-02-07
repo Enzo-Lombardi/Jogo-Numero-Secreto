@@ -18,12 +18,12 @@ function mensagemTela() {
 mensagemTela();
 
 function verificaChute() {
-    let chute = document.querySelector("input").value;
+    let chute = document.getElementById("input-do-chute").value;
     
     if (chute == numeroSecreto) {
         exibirTextoNaTela("h1", "Acertou!");
         let palavraTentativa = tentativas > 1 ? "tentativas" : "tentativa";
-        let mensagemTentatias = `Você descobrio o número secreto com ${tentativas} ${palavraTentativa}`;
+        let mensagemTentatias = `Você descobriu o número secreto com ${tentativas} ${palavraTentativa}`;
         exibirTextoNaTela("p", mensagemTentatias);
         document.getElementById("reiniciar").removeAttribute("disaled");
         document.getElementById("chutar").setAttribute("disabled", btrue)
